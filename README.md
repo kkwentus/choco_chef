@@ -4,6 +4,7 @@
 In us-west-2
 
 windows 2016:  ami-0dffeb18491b15a05
+
 windows 2012:
 
 
@@ -27,5 +28,5 @@ windows 2012:
 
 * Configure a hosts file with:
 
-172.31.54.11    automate.automate-demo.com automate
-172.31.54.10    chef.automate-demo.com chef
+  172.31.54.11    automate.automate-demo.com automate
+  172.31.54.10    chef.automate-demo.com chef
