@@ -13,7 +13,8 @@ windows 2016:  ami-0dffeb18491b15a05
 windows 2012:
 
 
-## Steps prep a base Windows AMI for bootstrapping with BJC:
+## Steps prep a base Windows AMI for bootstrapping with BJC:   
+This is already done in the AMIs listed, but for future reference::
 
 * turn off windows firewall
 * setup an administrative user/password to reference in bootstrap
