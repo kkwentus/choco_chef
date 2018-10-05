@@ -1,5 +1,9 @@
 # choco_chef
 
+* Windows AMIs ready bootstrap to BJC for compliance demos
+*   Create and bootstrap commands to run from within your BJC workstation
+*     Make sure and configure the Security Group and Subnet to map to your BJC instance
+
 ## Current AMIs:
 In us-west-2
 
@@ -29,4 +33,5 @@ windows 2012:
 * Configure a hosts file with:
 
   172.31.54.11    automate.automate-demo.com automate
+  
   172.31.54.10    chef.automate-demo.com chef
