@@ -1,0 +1,32 @@
+{
+  "name": "win_cis_2016",
+  "description": "CIS for Win 2016",
+  "json_class": "Chef::Role",
+  "default_attributes": {
+    "chef_client": {
+      "interval": 180,
+      "task": {
+        "frequency_modifier": 3
+      }
+    }
+  },
+  "override_attributes": {
+    "audit": {
+      "profiles": [
+        {
+          "name": "cis-windows2016rtm-release1607-level1-memberserver",
+          "compliance": "workstation-1/cis-windows2016rtm-release1607-level1-memberserver"
+        }
+      ]
+    }
+  },
+  "chef_type": "role",
+  "run_list": [
+    "recipe[chef-client::task]",
+    "recipe[chef-client::config]",
+    "recipe[audit]"
+  ],
+  "env_run_lists": {
+
+  }
+}

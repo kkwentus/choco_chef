@@ -1,0 +1,1 @@
+knife ec2 server create -x  -P  --node-name %1 --identity-file C:\Users\chef\.ssh\id_rsa --ssh-key <key> --region us-west-2 -g <securitygroup> --subnet <submit> -I <ami> --flavor t2.large --tags X-TTL='240' --associate-public-ip --run-list 'role[%2]'
