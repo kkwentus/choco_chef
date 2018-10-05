@@ -28,9 +28,9 @@ This is already done in the AMIs listed, but for future reference::
   Set-Item wsman:localhost\client\trustedhosts -value * -force  
   Get-NetFirewallProfile | Set-NetFirewallProfile -Enabled False  
 
-  net stop winrm
-  sc.exe config winrm start=auto
-  net start winrm
+  net stop winrm  
+  sc.exe config winrm start=auto  
+  net start winrm  
 
 * Configure a hosts file with:
 
